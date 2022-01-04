@@ -59,3 +59,23 @@ const longestArrString = (arr) => {
 console.log("===== Return the longest string from an array of strings =====");
 console.log(longestArrString(["I", "Love", "Web Development"]));
 console.log("=== end ===");
+
+// Challenge n°6 : Merge an arbitrary number of arrays (Method 1)
+const mergeArrays_method1 = (arr1, arr2, ...arr) => {
+  return arr1.concat(arr2, ...arr);
+};
+
+// Challenge n°6 Log
+console.log("===== Merge an arbitrary number of arrays (Method 1) =====");
+console.log(mergeArrays_method1([true, true], [1, 2], ["a", "b"]));
+console.log("=== end ===");
+
+// Challenge n°6 : Merge an arbitrary number of arrays (Method 2)
+const mergeArrays_method2 = (...arr) => {
+  return arr.flat();
+};
+
+// Challenge n°6 Log
+console.log("===== Merge an arbitrary number of arrays (Method 2) =====");
+console.log(mergeArrays_method2([true, true], [1, 2], ["a", "b"]));
+console.log("=== end ===");
