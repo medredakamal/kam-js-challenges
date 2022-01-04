@@ -170,3 +170,32 @@ const lastArrElements_method2 = (arr, num) => {
 console.log("===== Return last n array elements (Method 2) =====");
 console.log(lastArrElements_method2([1, 2, 3, 4, 5], 6));
 console.log("=== end ===");
+
+// Challenge n°12 : Group array of strings by first letter.
+const groupArrayElements = (arr) => {
+  return arr.reduce((acc, cur) => {
+    const firstLetter = cur.toLowerCase().charAt(0);
+    return {
+      ...acc,
+      [firstLetter]: [...(acc[firstLetter] || []), cur],
+    };
+  }, {});
+};
+
+// Challenge n°12 Log
+console.log("===== Group array of strings by first letter. =====");
+console.log(
+  groupArrayElements([
+    "Laravel",
+    "Symfony",
+    "CodeIgniter",
+    "Zend Framework/Laminas Project",
+    "Yii",
+    "CakePHP",
+    "Slim",
+    "Phalcon",
+    "FuelPHP",
+    "Fat-Free Framework",
+  ])
+);
+console.log("=== end ===");
