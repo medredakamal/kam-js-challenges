@@ -39,3 +39,13 @@ const sortArrStrings = (arr) => {
 console.log("===== Sorting array strings alphabetically =====");
 console.log(sortArrStrings(["z", "c", "d", "a", "y", "a", "w"]));
 console.log("=== end ===");
+
+// Challenge n°4 : Return the average of an array of numbers
+const numbersAverage = (arr) => {
+  return arr.reduce((acc, c) => acc + c, 0) / arr.length;
+};
+
+// Challenge n°4 Log
+console.log("===== Return the average of an array of numbers =====");
+console.log(numbersAverage([-40, 0, 850, 65]));
+console.log("=== end ===");
