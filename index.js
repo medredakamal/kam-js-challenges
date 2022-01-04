@@ -89,3 +89,23 @@ const removeArrElement = (arr, val) => {
 console.log("===== Remove a specific array element =====");
 console.log(removeArrElement([1, "2", 3], "2"));
 console.log("=== end ===");
+
+// Challenge n°8 : Merge two arrays with duplicate values (Method 1)
+const mergeClean_method1 = (...arr) => {
+  return [...new Set(arr.flat().sort((a, b) => a - b))];
+};
+
+// Challenge n°8 Log
+console.log("===== Merge two arrays with duplicate values (Method 1) =====");
+console.log(mergeClean_method1([-10, 22, 333, 42], [-11, 5, 22, 41, 42]));
+console.log("=== end ===");
+
+// Challenge n°8 : Merge two arrays with duplicate values (Method 2)
+const mergeClean_method2 = (first, second) => {
+  return [...new Set([...first, ...second])].sort((a, b) => a - b);
+};
+
+// Challenge n°8 Log
+console.log("===== Merge two arrays with duplicate values (Method 2) =====");
+console.log(mergeClean_method2([-10, 22, 333, 42], [-11, 5, 22, 41, 42]));
+console.log("=== end ===");
