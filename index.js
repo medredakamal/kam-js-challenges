@@ -136,3 +136,17 @@ console.log(
 );
 console.log(SumArrGreaterThan_method2([78, 99, 100, 101, 401], 99));
 console.log("=== end ===");
+
+// Challenge n°10 : Create a range of numbers
+const numbersRange = (num1, num2) => {
+  let myarray = [];
+  for (let i = num1; i <= num2; i++) {
+    myarray.push(i);
+  }
+  return myarray;
+};
+
+// Challenge n°10 Log
+console.log("===== Create a range of numbers =====");
+console.log(numbersRange(2, 10));
+console.log("=== end ===");
