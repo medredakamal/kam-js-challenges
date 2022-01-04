@@ -109,3 +109,30 @@ const mergeClean_method2 = (first, second) => {
 console.log("===== Merge two arrays with duplicate values (Method 2) =====");
 console.log(mergeClean_method2([-10, 22, 333, 42], [-11, 5, 22, 41, 42]));
 console.log("=== end ===");
+
+// Challenge n°9 : Sum up all array elements with values greater than (Method 1)
+const SumArrGreaterThan_method1 = (arr, num) => {
+  return arr.filter((item) => item > num).reduce((acc, curr) => acc + curr, 0);
+};
+
+// Challenge n°9 Log
+console.log(
+  "===== Sum up all array elements with values greater than (Method 1) ====="
+);
+console.log(SumArrGreaterThan_method1([78, 99, 100, 101, 401], 99));
+console.log("=== end ===");
+
+// Challenge n°9 : Sum up all array elements with values greater than (Method 2)
+const SumArrGreaterThan_method2 = (arr, num) => {
+  return arr.reduce((sum, curr) => {
+    if (curr > num) return sum + curr;
+    else return sum;
+  }, 0);
+};
+
+// Challenge n°9 Log
+console.log(
+  "===== Sum up all array elements with values greater than (Method 2) ====="
+);
+console.log(SumArrGreaterThan_method2([78, 99, 100, 101, 401], 99));
+console.log("=== end ===");
