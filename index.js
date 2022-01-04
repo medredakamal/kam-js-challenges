@@ -150,3 +150,23 @@ const numbersRange = (num1, num2) => {
 console.log("===== Create a range of numbers =====");
 console.log(numbersRange(2, 10));
 console.log("=== end ===");
+
+// Challenge n°11 : Return last n array elements (Method 1)
+const lastArrElements_method1 = (arr, num) => {
+  return arr.length > num - 1 ? arr.slice(-num) : arr;
+};
+
+// Challenge n°11 Log
+console.log("===== Return last n array elements (Method 1) =====");
+console.log(lastArrElements_method1([1, 2, 3, 4, 5], 3));
+console.log("=== end ===");
+
+// Challenge n°11 : Return last n array elements (Method 2)
+const lastArrElements_method2 = (arr, num) => {
+  return arr.slice(-num);
+};
+
+// Challenge n°11 Log
+console.log("===== Return last n array elements (Method 2) =====");
+console.log(lastArrElements_method2([1, 2, 3, 4, 5], 6));
+console.log("=== end ===");
