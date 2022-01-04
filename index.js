@@ -23,3 +23,19 @@ const sortArrNumbers = (arr) => {
 console.log("===== Sorting array numbers in descending order =====");
 console.log(sortArrNumbers([12, 43, 235, 3, 15]));
 console.log("=== end ===");
+
+// Challenge n°3 : Sorting array strings alphabetically
+const sortArrStrings = (arr) => {
+  return arr.sort((a, b) => {
+    if (b > a) {
+      return -1;
+    } else {
+      return 1;
+    }
+  });
+};
+
+// Challenge n°3 Log
+console.log("===== Sorting array strings alphabetically =====");
+console.log(sortArrStrings(["z", "c", "d", "a", "y", "a", "w"]));
+console.log("=== end ===");
