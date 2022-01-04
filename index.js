@@ -79,3 +79,13 @@ const mergeArrays_method2 = (...arr) => {
 console.log("===== Merge an arbitrary number of arrays (Method 2) =====");
 console.log(mergeArrays_method2([true, true], [1, 2], ["a", "b"]));
 console.log("=== end ===");
+
+// Challenge n°7 : Remove a specific array element
+const removeArrElement = (arr, val) => {
+  return arr.filter((item) => item !== val);
+};
+
+// Challenge n°7 Log
+console.log("===== Remove a specific array element =====");
+console.log(removeArrElement([1, "2", 3], "2"));
+console.log("=== end ===");
