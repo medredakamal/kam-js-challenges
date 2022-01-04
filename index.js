@@ -49,3 +49,13 @@ const numbersAverage = (arr) => {
 console.log("===== Return the average of an array of numbers =====");
 console.log(numbersAverage([-40, 0, 850, 65]));
 console.log("=== end ===");
+
+// Challenge n°5 : Return the longest string from an array of strings
+const longestArrString = (arr) => {
+  return arr.reduce((a, b) => (a.length <= b.length ? b : a));
+};
+
+// Challenge n°5 Log
+console.log("===== Return the longest string from an array of strings =====");
+console.log(longestArrString(["I", "Love", "Web Development"]));
+console.log("=== end ===");
